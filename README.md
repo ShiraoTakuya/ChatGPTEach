@@ -7,7 +7,7 @@ ChatGPTのAPIを利用してChatGPTに質問ができます。
 
 質問した結果の例
 
-![demo](https://raw.githubusercontent.com/ShiraoTakuya/ChatGPTChat/main/cap1.PNG)
+![demo](https://raw.githubusercontent.com/ShiraoTakuya/ChatGPTEach/main/cap1.PNG)
 
 # Usage
 
