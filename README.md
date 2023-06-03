@@ -30,8 +30,8 @@ ChatGPTのAPIを利用してChatGPTに質問ができます。
  
 # Note
  
-* OPEN AIのAPI利用料がかかります。過去の会話も毎回トークンに加算されます。十分気を付けてください。
-* OPEN AI API usage fee will be charged. Past conversations are also added to the token each time. Please be careful.
+* OPEN AIのAPI利用料がかかります。十分気を付けてください。
+* OPEN AI API usage fee will be charged. Please be careful.
 
 # Author
   
