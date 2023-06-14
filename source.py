@@ -8,16 +8,17 @@ class ChatGPT:
 	def __init__(self, gpt_ver, role):
 		self.gpt_ver = gpt_ver
 		self.role = role
-		self.history = [{"role":"system","content":"You are a "+role}, {"role":"user","content":""}]
+		self.history = [{"role":"system","content":"You are a "+role},{},{}]
 
 	def generate_text(self, prompt):
+		self.history[1] = {"role":"user","content":prompt}
 		completion = openai.ChatCompletion.create(
 			model=self.gpt_ver,
 			max_tokens=1000,
-			messages=self.history[:1] + [{"role":"user","content":prompt}]
+			messages=self.history[:2]
 		)
 		message = completion.choices[0].message.content
-		self.history[1] = {"role":"assistant","content":message}
+		self.history[2] = {"role":"assistant","content":message}
 		return message
 
 if __name__ == "__main__":
